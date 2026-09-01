@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./matt_system_terminal.svg" width="100%">
+  <img src="./matt_system_terminal_v2.svg" width="100%">
 </p>
 
 ---
