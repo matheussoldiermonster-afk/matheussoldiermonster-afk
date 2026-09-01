@@ -2,10 +2,6 @@
   <img src="./banner.png" width="100%">
 </p>
 
-<p align="center">
-  <strong>IT PROFESSIONAL • SOFTWARE • AUTOMATION</strong>
-</p>
-
 ---
 
 ### 01 // MATT_IDENTITY
