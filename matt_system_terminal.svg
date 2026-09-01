@@ -1,0 +1,153 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#14100D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#FF8A2A"/>
+      <stop offset="0.5" stop-color="#FFB15E"/>
+      <stop offset="1" stop-color="#FF6A00"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .mono { font-family: "Courier New", Consolas, monospace; }
+      .dim { fill: #9A8B7D; }
+      .txt { fill: #E9DED2; }
+      .acc { fill: #FF9B3D; }
+      .ok  { fill: #FFB15E; }
+      .line { stroke: #7A3D12; stroke-width: 1; opacity: .65; }
+
+      .reveal { opacity: 0; animation: show .45s ease forwards; }
+      .r1 { animation-delay: .35s; }
+      .r2 { animation-delay: .85s; }
+      .r3 { animation-delay: 1.35s; }
+      .r4 { animation-delay: 1.85s; }
+      .r5 { animation-delay: 2.35s; }
+      .r6 { animation-delay: 2.95s; }
+      .r7 { animation-delay: 3.45s; }
+      .r8 { animation-delay: 4.05s; }
+      .r9 { animation-delay: 4.65s; }
+      .r10 { animation-delay: 5.25s; }
+      .r11 { animation-delay: 5.85s; }
+
+      .pulse { animation: pulse 1.7s ease-in-out infinite; transform-origin: center; }
+      .blink { animation: blink 1s steps(1) infinite; }
+
+      .bar1 { animation: grow 2.8s ease-in-out infinite alternate; transform-origin: left center; }
+      .bar2 { animation: grow2 3.4s ease-in-out infinite alternate; transform-origin: left center; }
+      .scan { animation: scan 4.5s linear infinite; }
+
+      @keyframes show { to { opacity: 1; } }
+      @keyframes blink { 0%,48% { opacity: 1; } 49%,100% { opacity: 0; } }
+      @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+      @keyframes grow { 0% { transform: scaleX(.42); } 100% { transform: scaleX(1); } }
+      @keyframes grow2 { 0% { transform: scaleX(.68); } 100% { transform: scaleX(.9); } }
+      @keyframes scan { 0% { transform: translateY(-8px); opacity: 0; } 15% { opacity: .22; } 85% { opacity: .22; } 100% { transform: translateY(390px); opacity: 0; } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; animation: none; }
+        .pulse, .blink, .bar1, .bar2, .scan { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="17" stroke="#5C2A0E" stroke-width="2"/>
+  <rect x="14" y="14" width="1172" height="392" rx="12" stroke="#2D1B12"/>
+
+  <!-- subtle circuitry -->
+  <path d="M35 72H170L190 52H310" class="line"/>
+  <path d="M890 52H1030L1055 77H1160" class="line"/>
+  <path d="M50 365H180L205 340H305" class="line"/>
+  <path d="M915 350H1030L1050 370H1160" class="line"/>
+  <circle cx="190" cy="52" r="3" fill="#FF8A2A" class="pulse"/>
+  <circle cx="1055" cy="77" r="3" fill="#FF8A2A" class="pulse"/>
+  <circle cx="205" cy="340" r="3" fill="#FF8A2A" class="pulse"/>
+  <circle cx="1050" cy="370" r="3" fill="#FF8A2A" class="pulse"/>
+
+  <!-- scanline -->
+  <rect x="18" y="18" width="1164" height="2" fill="#FF8A2A" opacity=".15" class="scan"/>
+
+  <!-- Window chrome -->
+  <circle cx="46" cy="42" r="5" fill="#FF6A00"/>
+  <circle cx="64" cy="42" r="5" fill="#B85A1D"/>
+  <circle cx="82" cy="42" r="5" fill="#7A3D12"/>
+  <text x="105" y="47" class="mono dim" font-size="15">MATT_SYSTEM.exe</text>
+  <text x="1032" y="47" class="mono acc" font-size="13">● ONLINE</text>
+
+  <line x1="28" y1="62" x2="1172" y2="62" stroke="#3A2115"/>
+
+  <!-- Left terminal -->
+  <g class="mono" font-size="17">
+    <text x="52" y="96" class="acc reveal r1">&gt; boot sequence initiated...</text>
+
+    <text x="52" y="132" class="txt reveal r2">[</text>
+    <text x="70" y="132" class="ok reveal r2">OK</text>
+    <text x="101" y="132" class="txt reveal r2">] IT SUPPORT</text>
+    <text x="365" y="132" class="acc reveal r2">ONLINE</text>
+
+    <text x="52" y="162" class="txt reveal r3">[</text>
+    <text x="70" y="162" class="ok reveal r3">OK</text>
+    <text x="101" y="162" class="txt reveal r3">] SOFTWARE DEVELOPMENT</text>
+    <text x="365" y="162" class="acc reveal r3">ONLINE</text>
+
+    <text x="52" y="192" class="txt reveal r4">[</text>
+    <text x="70" y="192" class="ok reveal r4">OK</text>
+    <text x="101" y="192" class="txt reveal r4">] AUTOMATION</text>
+    <text x="365" y="192" class="acc reveal r4">ONLINE</text>
+
+    <text x="52" y="222" class="txt reveal r5">[</text>
+    <text x="70" y="222" class="ok reveal r5">OK</text>
+    <text x="101" y="222" class="txt reveal r5">] DATABASE</text>
+    <text x="365" y="222" class="acc reveal r5">ONLINE</text>
+
+    <text x="52" y="270" class="acc reveal r6">&gt; current_projects</text>
+    <text x="76" y="304" class="txt reveal r7">├── TravelWay</text>
+    <text x="365" y="304" class="ok reveal r7">ACTIVE</text>
+    <text x="76" y="334" class="txt reveal r8">└── FleetWise</text>
+    <text x="365" y="334" class="ok reveal r8">ACTIVE</text>
+
+    <text x="52" y="380" class="acc reveal r9">&gt; awaiting_next_challenge...</text>
+    <rect x="357" y="365" width="12" height="19" rx="1" fill="#FF9B3D" class="blink reveal r9"/>
+  </g>
+
+  <!-- Right status module -->
+  <g class="reveal r6">
+    <rect x="635" y="92" width="508" height="252" rx="10" fill="#0D0B09" stroke="#4A2918"/>
+    <text x="664" y="122" class="mono acc" font-size="15">SYSTEM_STATUS // LIVE</text>
+
+    <text x="664" y="158" class="mono dim" font-size="13">ROLE</text>
+    <text x="760" y="158" class="mono txt" font-size="14">IT / Developer</text>
+
+    <text x="664" y="188" class="mono dim" font-size="13">STACK</text>
+    <text x="760" y="188" class="mono txt" font-size="14">React • Node.js • Python • SQL</text>
+
+    <text x="664" y="218" class="mono dim" font-size="13">AUTOMATION</text>
+    <text x="760" y="218" class="mono txt" font-size="14">n8n • APIs • Integrations</text>
+
+    <text x="664" y="248" class="mono dim" font-size="13">DATABASE</text>
+    <text x="760" y="248" class="mono txt" font-size="14">PostgreSQL • Prisma</text>
+
+    <text x="664" y="284" class="mono dim" font-size="12">DEV SIGNAL</text>
+    <rect x="760" y="273" width="320" height="10" rx="5" fill="#21150F"/>
+    <rect x="760" y="273" width="290" height="10" rx="5" fill="url(#accent)" class="bar1"/>
+
+    <text x="664" y="314" class="mono dim" font-size="12">AUTOMATION SIGNAL</text>
+    <rect x="760" y="303" width="320" height="10" rx="5" fill="#21150F"/>
+    <rect x="760" y="303" width="260" height="10" rx="5" fill="url(#accent)" class="bar2"/>
+  </g>
+
+  <!-- Bottom signature -->
+  <g class="reveal r11">
+    <text x="820" y="382" class="mono dim" font-size="12">SYSTEM // AUTOMATE // BUILD</text>
+    <circle cx="1112" cy="378" r="4" fill="#FF8A2A" filter="url(#glow)" class="pulse"/>
+  </g>
+</svg>
