@@ -1,0 +1,153 @@
+<svg width="1200" height="440" viewBox="0 0 1200 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#080807"/>
+    <stop offset="0.55" stop-color="#110D09"/>
+    <stop offset="1" stop-color="#080706"/>
+  </linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#7A3210"/>
+    <stop offset="0.5" stop-color="#FF9A3D"/>
+    <stop offset="1" stop-color="#7A3210"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#FFE0B0"/>
+    <stop offset="1" stop-color="#D87825"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    .m{font-family:"Courier New",Consolas,monospace}
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:5px}
+    .dim{fill:#8B7868}.txt{fill:#E9D8C7}.orange{fill:#FF9A3D}.gold{fill:#FFD19A}
+    .stroke{stroke:#613017}.fine{stroke:#5B3018;stroke-width:1;opacity:.6}
+    .reveal{opacity:0;animation:reveal .5s ease forwards}
+    .d1{animation-delay:.25s}.d2{animation-delay:.65s}.d3{animation-delay:1.05s}
+    .d4{animation-delay:1.45s}.d5{animation-delay:1.85s}.d6{animation-delay:2.25s}
+    .d7{animation-delay:2.65s}.d8{animation-delay:3.05s}.d9{animation-delay:3.45s}
+    .d10{animation-delay:3.85s}
+    .pulse{animation:pulse 1.8s ease-in-out infinite}
+    .blink{animation:blink 1s steps(1) infinite}
+    .scan{animation:scan 5s linear infinite}
+    .dash{stroke-dasharray:8 9;animation:dash 3s linear infinite}
+    .orbit{transform-origin:900px 218px;animation:orbit 12s linear infinite}
+    @keyframes reveal{to{opacity:1}}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+    @keyframes scan{0%{transform:translateY(-20px);opacity:0}15%{opacity:.16}85%{opacity:.16}100%{transform:translateY(430px);opacity:0}}
+    @keyframes dash{to{stroke-dashoffset:-34}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;animation:none}.pulse,.blink,.scan,.dash,.orbit{animation:none}}
+  </style>
+</defs>
+
+<!-- Base -->
+<rect width="1200" height="440" rx="18" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="438" rx="17" stroke="#613017" stroke-width="2"/>
+<rect x="13" y="13" width="1174" height="414" rx="12" stroke="#2A1A11"/>
+
+<!-- Circuit architecture -->
+<g class="fine">
+  <path d="M25 82H150L178 54H322"/>
+  <path d="M25 100H110L132 78"/>
+  <path d="M1175 82H1052L1028 58H980"/>
+  <path d="M1175 102H1090L1065 78"/>
+  <path d="M25 372H150L178 400H330"/>
+  <path d="M1175 372H1050L1024 400H880"/>
+  <path d="M420 28V64M455 28V48M760 28V65M795 28V48"/>
+</g>
+<g fill="#FF8A2A">
+  <circle cx="178" cy="54" r="3" class="pulse"/><circle cx="1028" cy="58" r="3" class="pulse"/>
+  <circle cx="178" cy="400" r="3" class="pulse"/><circle cx="1024" cy="400" r="3" class="pulse"/>
+</g>
+
+<!-- Scanline -->
+<rect x="18" y="18" width="1164" height="2" fill="#FF8A2A" class="scan"/>
+
+<!-- Top labels -->
+<text x="38" y="42" class="m dim" font-size="12">BUILD • DEBUG • DEPLOY</text>
+<text x="1038" y="42" class="m dim" font-size="11">MATT.SYS / 2.0</text>
+<line x1="30" y1="57" x2="1170" y2="57" stroke="#432517"/>
+
+<!-- Center identity -->
+<g class="reveal d1">
+  <text x="600" y="105" text-anchor="middle" class="title gold" font-size="31">MATT_SYSTEM</text>
+  <text x="600" y="132" text-anchor="middle" class="m orange" font-size="15">SYSTEM // AUTOMATE // BUILD</text>
+  <line x1="425" y1="148" x2="775" y2="148" stroke="url(#orange)"/>
+</g>
+
+<!-- Left code panel -->
+<g class="reveal d2">
+  <rect x="36" y="174" width="330" height="202" rx="8" fill="#0C0A08" stroke="#3F2415"/>
+  <text x="55" y="198" class="m orange" font-size="12">ARCHITECTURE.LOG</text>
+  <text x="55" y="223" class="m dim" font-size="11">const builder = {</text>
+  <text x="67" y="243" class="m txt" font-size="11">role: "IT / Developer",</text>
+  <text x="67" y="263" class="m txt" font-size="11">focus: "Automation",</text>
+  <text x="67" y="283" class="m txt" font-size="11">stack: ["React","Node"],</text>
+  <text x="67" y="303" class="m txt" font-size="11">database: "PostgreSQL",</text>
+  <text x="67" y="323" class="m txt" font-size="11">projects: 2</text>
+  <text x="55" y="347" class="m dim" font-size="11">};</text>
+  <text x="55" y="366" class="m orange" font-size="11">// optimization is the goal.</text>
+</g>
+
+<!-- Right performance panel -->
+<g class="reveal d3">
+  <rect x="834" y="174" width="330" height="202" rx="8" fill="#0C0A08" stroke="#3F2415"/>
+  <text x="854" y="198" class="m orange" font-size="12">PERFORMANCE.LOG</text>
+  <text x="854" y="225" class="m dim" font-size="11">FOCUS</text>
+  <rect x="930" y="216" width="170" height="7" rx="3" fill="#25150D"/>
+  <rect x="930" y="216" width="150" height="7" rx="3" fill="url(#orange)" class="pulse"/>
+  <text x="854" y="250" class="m dim" font-size="11">LOGIC</text>
+  <rect x="930" y="241" width="170" height="7" rx="3" fill="#25150D"/>
+  <rect x="930" y="241" width="135" height="7" rx="3" fill="url(#orange)" class="pulse"/>
+  <text x="854" y="275" class="m dim" font-size="11">SCALE</text>
+  <rect x="930" y="266" width="170" height="7" rx="3" fill="#25150D"/>
+  <rect x="930" y="266" width="160" height="7" rx="3" fill="url(#orange)" class="pulse"/>
+  <text x="854" y="308" class="m dim" font-size="11">STATUS</text>
+  <text x="930" y="308" class="m gold" font-size="11">ONLINE</text>
+  <text x="854" y="333" class="m dim" font-size="11">MODE</text>
+  <text x="930" y="333" class="m txt" font-size="11">BUILDING</text>
+  <text x="854" y="358" class="m dim" font-size="11">SIGNAL</text>
+  <text x="930" y="358" class="m orange" font-size="11">██████████ 100%</text>
+</g>
+
+<!-- Central reactor / network -->
+<g class="reveal d4">
+  <circle cx="600" cy="238" r="91" stroke="#4A2717" stroke-width="1" stroke-dasharray="3 8"/>
+  <circle cx="600" cy="238" r="72" stroke="#74401F" stroke-width="1" stroke-dasharray="7 8" class="dash"/>
+  <circle cx="600" cy="238" r="48" stroke="#A95C24" stroke-width="1"/>
+  <circle cx="600" cy="238" r="10" fill="#FF9A3D" filter="url(#glow)" class="pulse"/>
+  <path d="M600 145V190M600 286V331M507 238H552M648 238H693" stroke="#8A4A1C"/>
+  <path d="M534 172L566 204M666 272L698 304M666 204L698 172M534 304L566 272" stroke="#663717"/>
+  <text x="600" y="231" text-anchor="middle" class="m gold" font-size="11">CORE</text>
+  <text x="600" y="249" text-anchor="middle" class="m dim" font-size="9">ACTIVE</text>
+</g>
+
+<!-- orbiting nodes -->
+<g class="orbit">
+  <circle cx="600" cy="146" r="4" fill="#FF9A3D" filter="url(#glow)"/>
+  <circle cx="692" cy="238" r="4" fill="#FF9A3D" filter="url(#glow)"/>
+  <circle cx="600" cy="330" r="4" fill="#FF9A3D" filter="url(#glow)"/>
+  <circle cx="508" cy="238" r="4" fill="#FF9A3D" filter="url(#glow)"/>
+</g>
+
+<!-- Project strip -->
+<g class="reveal d5">
+  <rect x="390" y="350" width="420" height="48" rx="7" fill="#0C0A08" stroke="#4A2918"/>
+  <text x="410" y="370" class="m dim" font-size="10">CURRENT_PROJECTS</text>
+  <text x="410" y="388" class="m txt" font-size="11">TravelWay</text>
+  <text x="515" y="388" class="m orange" font-size="10">● ACTIVE</text>
+  <text x="635" y="388" class="m txt" font-size="11">FleetWise</text>
+  <text x="730" y="388" class="m orange" font-size="10">● ACTIVE</text>
+</g>
+
+<!-- Footer -->
+<g class="reveal d6">
+  <line x1="30" y1="407" x2="1170" y2="407" stroke="#432517"/>
+  <text x="38" y="424" class="m dim" font-size="10">ACCESS LEVEL: ADMIN</text>
+  <text x="600" y="424" text-anchor="middle" class="m orange" font-size="10">&gt; SYSTEM // ONLINE // BEYOND LIMITS</text>
+  <text x="1162" y="424" text-anchor="end" class="m dim" font-size="10">v2.0.0</text>
+</g>
+</svg>
