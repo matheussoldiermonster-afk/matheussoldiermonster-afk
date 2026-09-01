@@ -2,6 +2,10 @@
   <img src="./banner.png" width="100%">
 </p>
 
+<p align="center">
+  <img src="./matt_system_terminal.svg" width="100%">
+</p>
+
 ---
 
 ### 01 // MATT_IDENTITY
