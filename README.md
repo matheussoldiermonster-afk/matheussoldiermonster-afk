@@ -2,11 +2,19 @@
   <img src="./banner.png" width="100%">
 </p>
 
-<h1 align="center">MATT_SYSTEM</h1>
+<p align="center">
+  <strong>IT PROFESSIONAL • SOFTWARE • AUTOMATION</strong>
+</p>
 
-<h3 align="center">
-  SYSTEM // AUTOMATE // BUILD
-</h3>
+---
+
+### 01 // MATT_IDENTITY
+
+```javascript
+const matt = {
+  role: "IT Professional | Developer | Automation",
+  ...
+};
 
 # `MATT_SYSTEM`
 
