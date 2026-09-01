@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="./banner.png" width="100%">
+</p>
+
+<h1 align="center">MATT_SYSTEM</h1>
+
+<h3 align="center">
+  SYSTEM // AUTOMATE // BUILD
+</h3>
+
 # `MATT_SYSTEM`
 
 ### `01 // MATT_IDENTITY`
