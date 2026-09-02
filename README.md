@@ -264,6 +264,8 @@ Busco entender **por que o problema existe**, construir uma solução eficiente 
   />
 </p>
 
+> SYSTEM_METRICS // DATA STREAM ACTIVE
+
 ---
 
 ### `10 // CONTRIBUTION_MATRIX`
