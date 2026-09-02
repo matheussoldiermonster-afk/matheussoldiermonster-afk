@@ -251,11 +251,17 @@ Busco entender **por que o problema existe**, construir uma solução eficiente 
 ### `09 // GITHUB_METRICS`
 
 <p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=matheussoldiermonster-afk&show_icons=true&theme=github_dark&hide_border=true&count_private=true"
+    height="170"
+    alt="GitHub Stats"
+  />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=matheussoldiermonster-afk&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheussoldiermonster-afk&layout=compact&theme=github_dark&hide_border=true" />
-
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheussoldiermonster-afk&layout=compact&theme=github_dark&hide_border=true&langs_count=8"
+    height="170"
+    alt="Top Languages"
+  />
 </p>
 
 ---
